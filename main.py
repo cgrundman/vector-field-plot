@@ -53,5 +53,5 @@ for idx, phase in enumerate(np.linspace(0, 2*np.pi, 90)):
     plt.title("Vector Field for Wind Measurement")
     plt.axis("equal")
     #plt.show()
-    plt.savefig(f"plots/wind_field_{idx}.png")
+    plt.savefig(f"figures/wind_field_{idx}.png")
     plt.close()
