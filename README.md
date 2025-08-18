@@ -1,2 +1,2 @@
-# vector.-field-plot
+# vector-field-plot
 Code for plotting a simple vector field
