@@ -11,7 +11,6 @@ X, Y = np.meshgrid(x, y)
 # Wave parameters
 kx = 2 * np.pi / (x.max() - x.min())
 ky = 2 * np.pi / (y.max() - y.min())
-omega = 3*np.pi/5   # frequency (for animation, if wanted)
 
 for idx, phase in enumerate(np.linspace(0, 2*np.pi, 90)):
 
@@ -43,7 +42,7 @@ for idx, phase in enumerate(np.linspace(0, 2*np.pi, 90)):
     plt.quiver(X[mask4], Y[mask4], U[mask4], V[mask4], color=colors[2], label="Interpolation")
 
     # Subset 3
-    plt.quiver(X[mask3], Y[mask3], U[mask3], V[mask3], color="red", label="Measurement Location")
+    plt.plot(X[mask3], Y[mask3], linewidth=0, marker='.', markersize=30, color="red", label="Measurement Location")
 
     plt.gca().set_facecolor("#e3e3e3")
     plt.grid(True)
